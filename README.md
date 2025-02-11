@@ -26,7 +26,7 @@ This method, while conceptually similar to Bitcoin’s proof-of-work mechanism, 
 
 ## How to launch solution?
 
-### I. Run Server
+### Run Server
 **1. Clone repository**
 
 **2. Build docker image**
@@ -44,14 +44,14 @@ docker network create word-net
 docker run --env-file ./cmd/server/.env -p 8080:8080 --network word-net --name word-server word-of-wisdom-server
 ```
 
-### II. Run Client
+### Run Client
 
 **1. Build docker image**
 ```shell
 docker build -f Dockerfile.client -t word-of-wisdom-client .
 ```
 
-**2. Run client**
+**2. Run**
 ```shell
 docker run --env-file ./cmd/client/.env --network word-net word-of-wisdom-client
 ```
