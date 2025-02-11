@@ -1,0 +1,27 @@
+# Build output
+/bin/
+/obj/
+
+# Test binary, built with `go test -c`
+*.test
+
+# Coverage output
+*.out
+
+# Dependency directories (if using Go modules, you may not need to ignore vendor)
+vendor/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# GoLand project files
+.idea/
+
+# Other editor directories
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Log files
+*.log
